@@ -1,5 +1,5 @@
-RegisterNetEvent("me:image2")
-AddEventHandler("me:image2", function(Text, Source)
+RegisterNetEvent("me:image")
+AddEventHandler("me:image", function(Text, Source)
     local PlayerId = GetPlayerFromServerId(Source)
     local IsDisplaying = true
     Citizen.CreateThread(function()
