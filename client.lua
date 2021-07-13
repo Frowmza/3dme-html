@@ -7,7 +7,7 @@ AddEventHandler("3dme:me", function(text, source, icon)
         while isDisplaying do
             Citizen.Wait(0)
             local htmlString = ""
-            local sourceCoords = GetEntityCoords(GetPlayerPed(PlayerId))
+            local sourceCoords = GetEntityCoords(GetPlayerPed(playerId))
             local nearCoords = GetEntityCoords(PlayerPedId())
             local distance = Vdist2(sourceCoords, nearCoords)
             if distance < 25.0 then
