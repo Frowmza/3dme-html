@@ -8,8 +8,8 @@
   height: auto;
   margin: 50px auto;
   background: #272727;
-  border-bottom: 4px solid #fff;
-  border-radius: 25px;
+  border-left: 4px solid #fff;
+  border-radius: 5px;
   padding: 5px;
   text-align: center;
   font-weight: 900;
@@ -20,17 +20,17 @@
   display:flex;
 }
 
-.sb3:before {
+.me-container:before {
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 10px solid rgb(255, 255, 255);
+  border-left: 10px solid #272727;
   border-right: 10px solid transparent;
-  border-top: 10px solid #ffffff;
+  border-top: 10px solid #272727;
   border-bottom: 10px solid transparent;
   left: 19px;
-  bottom: -21px;
+  bottom: -19px;
 }
 
 .icon-container {
@@ -43,7 +43,7 @@
   text-align: center;
   background: #fff;
   color: #272727;
-  border-radius: 25px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
