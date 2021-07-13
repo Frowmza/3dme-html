@@ -7,7 +7,7 @@ AddEventHandler("3dme:me", function(text, source, icon)
         while isDisplaying do
             Citizen.Wait(0)
             local htmlString = ""
-            local sourceCoords = GetEntityCoords(GetPlayerPed(PlayerId))
+            local sourceCoords = GetEntityCoords(GetPlayerPed(playerId))
             local nearCoords = GetEntityCoords(PlayerPedId())
             local distance = Vdist2(sourceCoords, nearCoords)
             if distance < 25.0 then
@@ -20,7 +20,7 @@ AddEventHandler("3dme:me", function(text, source, icon)
                     htmlString ..
                     '<span style="position: absolute; left: ' ..
                     xxx * 100 ..
-                    "%;top: " .. yyy * 100 .. '%;"><p class="box sb3"><i class="fas fa-'..icon..' fa-3x fa-pull-left"></i>' .. text .. "</p></span>"
+                    "%;top: " .. yyy * 100 .. '%;"><div class="me-container"><div class="icon-container"><i class="fa-solid fa-'..icon..' fa-3x"></i></div><div class="text-container">' .. text .. "</div></div></span>"
             end
             if lasthtmlString ~= htmlString then
                 SendNUIMessage({
