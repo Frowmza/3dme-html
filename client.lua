@@ -20,7 +20,7 @@ AddEventHandler("3dme:me", function(text, source, icon)
                     htmlString ..
                     '<span style="position: absolute; left: ' ..
                     xxx * 100 ..
-                    "%;top: " .. yyy * 100 .. '%;"><p class="box sb3"><i class="fas fa-'..icon..' fa-3x fa-pull-left"></i>' .. text .. "</p></span>"
+                    "%;top: " .. yyy * 100 .. '%;"><div class="me-container"><div class="icon-container"><i class="fa-solid fa-'..icon..' fa-3x"></i></div><div class="text-container">' .. text .. "</div></div></span>"
             end
             if lasthtmlString ~= htmlString then
                 SendNUIMessage({
