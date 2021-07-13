@@ -1,29 +1,55 @@
-.box {
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.me-container{
   width: 100%;
   max-width: 300px; /* Will be AT MOST 320px wide */
   word-wrap: break-word;
   text-size-adjust: auto;
   height: auto;
   margin: 50px auto;
-  background: #00bfb6;
-  padding: 20px;
+  background: #272727;
+  border-left: 4px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
   text-align: center;
   font-weight: 900;
+  font-family: 'Oxygen';
   font-size: 12px;
   color: #fff;
-  font-family: arial;
   position:relative;
+  display:flex;
 }
 
-.sb3:before {
+.me-container:before {
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 10px solid #00bfb6;
+  border-left: 10px solid #272727;
   border-right: 10px solid transparent;
-  border-top: 10px solid #00bfb6;
+  border-top: 10px solid #272727;
   border-bottom: 10px solid transparent;
   left: 19px;
   bottom: -19px;
+}
+
+.icon-container {
+  min-height: 45px;
+  max-height: 45px;
+  min-width: 45px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.text-container {
+ padding: 5px;
+ padding-left: 15px;
+ font-family: 'Oxygen';
+
 }
